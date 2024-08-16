@@ -1,6 +1,8 @@
 import { Button } from "flowbite-react";
 import MainNavBar from "../components/ui/MainNavbar";
 import ReactCountryFlag from "react-country-flag"
+import ethioCoders from "../assets/images/ethiopian-coder.png"
+import { Card } from "flowbite-react";
 
 
 const Home = () => {
@@ -11,13 +13,13 @@ const Home = () => {
             </section>
 
 
-            <section className="md:h-[calc(100vh-107px)] w-full border ">
+            <section className="md:h-[calc(100vh-107px)] w-full ">
                 <div className="container mx-auto p-3">
 
                     <div className="flex flex-col text-green-900 md:flex-row  gap-8">
 
 
-                        <div className="md:w-1/2 border md:h-[calc(100vh-107px)] pt-20 ">
+                        <div className="md:w-1/2  md:h-[calc(100vh-107px)] md:pt-20 ">
                             <p className="font-mono text-xl font-bold uppercase"><ReactCountryFlag countryCode="ET" style={{
                                 fontSize: '2em',
                                 lineHeight: '2em',
@@ -28,7 +30,9 @@ const Home = () => {
                         </div>
 
                         
-                        <div className="md:w-1/2 border  md:h-[calc(100vh-107px)] hidden md:block ">Content 2</div>
+                        <div className="md:w-1/2 hidden md:flex  items-center  md:h-[calc(100vh-107px)]  ">
+                            <img src={ethioCoders} className="rounded" alt="ethioCoders" />
+                        </div>
                     </div>
 
                 </div>
