@@ -6,6 +6,7 @@ import ethioCoders from "../assets/images/ethiopian-coder.png"
 import ministryOfLabor from "../assets/images/1-768x239.png"
 import primeMinister from "../assets/images/logo-768x146.png"
 import ministryOfTech from "../assets/images/logo_7-removebg-preview.png"
+import udacityLogo from "../assets/images/logo-udacity.png"
 
 
 
@@ -48,16 +49,36 @@ const Home = () => {
 
                     <div className="bg-teal-50 p-10 flex flex-col  md:flex-row gap-5 items-center">
                         <div className="md:w-full  flex w-full h-full justify-center items-center  ">
-                            <img src={primeMinister}  className="w-56 " alt="ministryOfLabor" />
+                            <img src={primeMinister} className="w-56 hover:w-72 hover:opacity-65 " alt="ministryOfLabor" />
                         </div>
                         <div className="md:w-full  flex w-full h-full justify-center items-center ">
-                        <img src={ministryOfLabor} className="w-56 " alt="ministryOfLabor" />
+                            <img src={ministryOfLabor} className="w-56 hover:w-60 hover:opacity-65" alt="ministryOfLabor" />
                         </div>
                         <div className="md:w-full  flex w-full h-full justify-center items-center ">
-                        <img src={ministryOfTech} className="w-56 " alt="ministryOfLabor" />
+                            <img src={ministryOfTech} className="w-56 hover:w-72 hover:opacity-65" alt="ministryOfLabor" />
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            {/** About Section */}
+
+            <section className="container mx-auto mt-10">
+                <div className="flex flex-col md:flex-row gap-6">
+                    <div className="md:w-1/2 p-5 ">
+                        <div>
+                            <span className="p-1 bg-yellow-400"></span>
+                            <p className="uppercase inline ps-2 font-mono text-lg font-bold">About this Initiative</p>
+                        </div>
+                        <hr className="mt-3" />
+                        <p className="text-slate-400 font-mono mt-4 md:mt-20">5 Million Ethiopian Coders is a joint initiative between the Government of Ethiopia and the Government of the United Arab Emirates. This program is an offshoot of the historic One Million Arab Coders program, which was announced in 2017 by His Highness Sheikh Mohammed Bin Rashid Al Maktoum at the World Economic Forum.
+                            Ethiopian learners will have the opportunity to gain foundational level skills across three domains: Programming Fundamentals, Data Science Fundamentals and Android Kotlin Developer Fundamentals. Learners will be supported by mentors who will support them on a dedicated Community Platform to unblock technical questions on a daily basis throughout the 6-7 week course. Upon successful course completion, learners will be awarded with skill-based certifications.</p>
+                            <Button color="dark" className="mt-10 w-full md:w-auto font-mono ps-3 pe-3">Know More</Button>
+                    </div>
+                    <div className="md:w-1/2 p-5">
+                        <img src={udacityLogo} alt="udacityLogo" />
+                    </div>
                 </div>
             </section>
         </>
