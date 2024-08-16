@@ -2,8 +2,6 @@ import { Button } from "flowbite-react";
 import MainNavBar from "../components/ui/MainNavbar";
 import ReactCountryFlag from "react-country-flag"
 import ethioCoders from "../assets/images/ethiopian-coder.png"
-import { Card } from "flowbite-react";
-
 
 const Home = () => {
     return (
