@@ -1,7 +1,13 @@
 import { Button } from "flowbite-react";
 import MainNavBar from "../components/ui/MainNavbar";
 import ReactCountryFlag from "react-country-flag"
+
 import ethioCoders from "../assets/images/ethiopian-coder.png"
+import ministryOfLabor from "../assets/images/1-768x239.png"
+import primeMinister from "../assets/images/logo-768x146.png"
+import ministryOfTech from "../assets/images/logo_7-removebg-preview.png"
+
+
 
 const Home = () => {
     return (
@@ -27,9 +33,28 @@ const Home = () => {
                             <Button color="dark" className="mt-10 font-mono ps-3 pe-3">Get Started</Button>
                         </div>
 
-                        
+
                         <div className="md:w-1/2 hidden md:flex  items-center  md:h-[calc(100vh-107px)]  ">
                             <img src={ethioCoders} className="rounded" alt="ethioCoders" />
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section>
+                <div className="container bg-teal-50 p-10 mx-auto">
+
+                    <div className="flex flex-col  md:flex-row gap-5 items-center">
+                        <div className="md:w-full  flex w-full h-full justify-center items-center  ">
+                            <img src={primeMinister}  className="w-56 " alt="ministryOfLabor" />
+                        </div>
+                        <div className="md:w-full  flex w-full h-full justify-center items-center ">
+                        <img src={ministryOfLabor} className="w-56 " alt="ministryOfLabor" />
+                        </div>
+                        <div className="md:w-full  flex w-full h-full justify-center items-center ">
+                        <img src={ministryOfTech} className="w-56 " alt="ministryOfLabor" />
                         </div>
                     </div>
 
