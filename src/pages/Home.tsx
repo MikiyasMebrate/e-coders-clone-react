@@ -30,7 +30,7 @@ const Home = () => {
                             }} /> 5 Million Ethiopian Coders</p>
                             <p className="w:3/4 md:w-11/12 text-5xl md:text-6xl font-bold tracking-widest font-mono uppercase">Advancing Digital Literacy for Ethiopia’s Youth</p>
                             <p className="pt-10 text-gray-400 font-mono">Acquire the essential digital skills necessary to establish a promising career in the ever-evolving technology industry with our comprehensive, fully-funded courses.</p>
-                            <Button color="dark" className="mt-10 font-mono ps-3 pe-3">Get Started</Button>
+                            <Button color="dark" className="mt-10 w-full md:w-auto font-mono ps-3 pe-3">Get Started</Button>
                         </div>
 
 
@@ -44,9 +44,9 @@ const Home = () => {
 
 
             <section>
-                <div className="container bg-teal-50 p-10 mx-auto">
+                <div className="container  p-5 mt-10 md:mt-0 rounded  mx-auto">
 
-                    <div className="flex flex-col  md:flex-row gap-5 items-center">
+                    <div className="bg-teal-50 p-10 flex flex-col  md:flex-row gap-5 items-center">
                         <div className="md:w-full  flex w-full h-full justify-center items-center  ">
                             <img src={primeMinister}  className="w-56 " alt="ministryOfLabor" />
                         </div>
