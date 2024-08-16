@@ -1,4 +1,4 @@
-import { Button } from "flowbite-react";
+import { Button, TextInput } from "flowbite-react";
 import MainNavBar from "../components/ui/MainNavbar";
 import ReactCountryFlag from "react-country-flag"
 
@@ -8,6 +8,9 @@ import primeMinister from "../assets/images/logo-768x146.png"
 import ministryOfTech from "../assets/images/logo_7-removebg-preview.png"
 import udacityLogo from "../assets/images/logo-udacity.png"
 import AboutCard from "../components/ui/AboutCard";
+import InfoCard from "../components/ui/InfoCard";
+import { HiOutlineMail } from "react-icons/hi";
+import MainFooter from "../components/ui/MainFooter";
 
 
 
@@ -108,6 +111,52 @@ const Home = () => {
                         <Button color="dark" className="mt-10 w-full md:w-auto font-mono ps-3 pe-3">Know More</Button>
                     </div>
                 </div>
+            </section>
+
+
+            {/** How it Works */}
+            <section className="container mx-auto mt-10">
+                <p className="font-mono text-center text-gray-400">Ethiopian Coders Initiative is an online platform</p>
+                <p className="font-mono text-center text-green-900 text-6xl uppercase font-bold mt-3">HOW IT WORKS</p>
+
+                <div className="flex justify-center flex-col md:flex-row  mt-24 gap-6 ">
+                    <div className="md:w-1/3 flex justify-center">
+                        <InfoCard className="shadow border-spacing-48"  title="ENROLLMENT" body="Select track of your choice, sign up, and take the course for free" />
+                    </div>
+
+                    <div className="md:w-1/3 flex justify-center">
+                        <InfoCard className="shadow border-spacing-48"  title="COMMUNITY" body="Join the community platform online to get support from other students as well as tutors." />
+                    </div>
+
+                    <div className="md:w-1/3 flex justify-center">
+                        <InfoCard className="shadow border-spacing-48"  title="CERTIFICATE" body="Complete the course and get a certification assessment." />
+                    </div>
+                </div>
+            </section>
+            
+
+            {/** Subscribe News */}
+            <section className="container mx-auto mt-20 ">
+                <div className="flex flex-col md:flex-row mt-20  rounded gap-6 bg-green-50 m-3 md:p-3">
+
+                    <div className="md:w-1/2  p-5">
+                        <p className="text-bold uppercase text-3xl font-mono text-center font-bold text-green-900">JOIN 5M+ Developers</p>
+                        <p className="font-mono text-gray-400 text-center">Stay in the loop with everything you need to know</p>
+                    </div>
+
+                    <div className="md:w-1/2 flex p-5 gap-6">
+                       <div className="w-3/4"><TextInput placeholder="Enter your email" icon={HiOutlineMail} type="text" sizing="md" /></div>
+                        <div className="w-1/4"><Button className="w-full" color="dark">Subscribe</Button></div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            {/** Footer */}
+            <section className="mt-20">
+                 <MainFooter />
             </section>
         </>
     );
