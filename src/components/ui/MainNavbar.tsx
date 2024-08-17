@@ -9,7 +9,7 @@ const MainNavBar = () => {
     return (
        <>
         <Navbar  className="border fixed top-0 left-0 right-0 z-50 bg-gray-50" fluid rounded>
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand>
                 <img src={logoImg} className="ms-10 h-10 sm:h-12" alt="ethio coder Logo" />
             </Navbar.Brand>
             <div className="flex md:order-2">

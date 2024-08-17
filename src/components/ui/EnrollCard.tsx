@@ -18,7 +18,7 @@ const EnrollCard = ({ title, body, btnColor, className }: EnrollCardProps) => {
             <h5 className="text-2xl  tracking-tight text-gray-900 dark:text-white">
                 {title}
             </h5>
-            <p className="font-extralight h-44 text-sm text-gray-400 dark:text-gray-400">
+            <p className="font-extralight md:h-44 text-sm text-gray-400 dark:text-gray-400">
                 {body}
             </p>
             <Button className={btnColor}>

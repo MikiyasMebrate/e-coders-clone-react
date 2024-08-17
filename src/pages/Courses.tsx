@@ -36,17 +36,17 @@ const Courses = () => {
             </section>
 
             {/**Enroll Courses */}
-            <section className="w-full bg-gray-50 p-20 rounded-xl mx-auto md:mt-44">
-                <div className="w-11/12 pb-10 mx-auto">
+            <section className="w-full bg-gray-50 p-5 md:p-20 rounded-xl mx-auto mt-10 md:mt-44">
+                <div className="w-full  md:w-11/12 pb-10 mx-auto">
                     <span className="p-1 bg-yellow-400"></span>
                     <p className="uppercase inline ps-2 font-mono text-lg font-bold">
                         About this Initiative
                     </p>
                 </div>
 
-                <div className="w-11/12 mx-auto">
+                <div className="md:w-11/12 mx-auto">
                     <div className="flex flex-col md:flex-row gap-6 justify-center ">
-                        <div className="md:w-1/3 flex justify-center">
+                        <div className=" md:w-1/3 flex justify-center">
 
                             <EnrollCard
                                 title="Android Developer Fundamentals"
