@@ -89,6 +89,7 @@ const Courses = () => {
             </section>
 
 
+            {/** Footer */}
             <section className="mt-20">
                 <MainFooter />
             </section>
