@@ -1,5 +1,4 @@
-import { Button, TextInput } from "flowbite-react";
-import MainNavBar from "../components/ui/MainNavbar";
+import { Button } from "flowbite-react";
 import ReactCountryFlag from "react-country-flag"
 
 import ethioCoders from "../assets/images/ethiopian-coder.png"
@@ -9,20 +8,15 @@ import ministryOfTech from "../assets/images/logo_7-removebg-preview.png"
 import udacityLogo from "../assets/images/logo-udacity.png"
 import AboutCard from "../components/ui/AboutCard";
 import InfoCard from "../components/ui/InfoCard";
-import { HiOutlineMail } from "react-icons/hi";
 import MainFooter from "../components/ui/MainFooter";
+import SubscribeEmail from "../components/ui/SubscribeEmail";
 
 
 
 const Home = () => {
     return (
         <>
-            <section className="mb-20 pb-5">
-                <MainNavBar />
-            </section>
-
-
-            <section className="md:h-[calc(100vh-107px)] w-full ">
+            <section className="md:h-[calc(100vh-107px)] w-full mt-20 ">
                 <div className="container mx-auto p-3">
 
                     <div className="flex flex-col text-green-900 md:flex-row  gap-8">
@@ -137,20 +131,7 @@ const Home = () => {
 
             {/** Subscribe News */}
             <section className="container mx-auto mt-20 ">
-                <div className="flex flex-col md:flex-row mt-20  rounded gap-6 bg-green-50 m-3 md:p-3">
-
-                    <div className="md:w-1/2  p-5">
-                        <p className="text-bold uppercase text-3xl font-mono text-center font-bold text-green-900">JOIN 5M+ Developers</p>
-                        <p className="font-mono text-gray-400 text-center">Stay in the loop with everything you need to know</p>
-                    </div>
-
-                    <div className="md:w-1/2 flex p-5 gap-6">
-                       <div className="w-3/4"><TextInput placeholder="Enter your email" icon={HiOutlineMail} type="text" sizing="md" /></div>
-                        <div className="w-1/4"><Button className="w-full" color="dark">Subscribe</Button></div>
-                    </div>
-
-
-                </div>
+                <SubscribeEmail />
             </section>
 
 
