@@ -2,19 +2,27 @@ import coders from "../assets/images/coders.png";
 import EnrollCard from "../components/ui/EnrollCard";
 import MainFooter from "../components/ui/MainFooter";
 import SubscribeEmail from "../components/ui/SubscribeEmail";
+import TypingText from "../components/ui/typing-text";
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const Courses = () => {
+    AOS.init()
     return (
         <>
             <section className="mt-40">
                 <div className="container  mx-auto">
                     <div className="w-11/12 shadow rounded-xl bg-green-900 border mx-auto">
                         <div className="flex flex-col md:flex-row p-10 gap-6">
-                            <div className="md:w-1/2 mt-5">
+                            <div className="md:w-1/2  mt-10">
                                 <p className="text-white uppercase font-mono text-3xl font-bold ">
                                     Welcome to the{" "}
-                                    <span className="bg-yellow-400 rounded-lg md:p-3 text-5xl">
-                                        Courses
+                                    <span className=" w-96 bg-yellow-400 rounded-lg md:p-5 text-5xl">
+
+                                        <div className="inline-flex">
+                                            <TypingText text=" Course" />
+                                        </div>
+
                                     </span>
 
                                 </p>
@@ -46,7 +54,8 @@ const Courses = () => {
 
                 <div className="md:w-11/12 mx-auto">
                     <div className="flex flex-col md:flex-row gap-6 justify-center ">
-                        <div className=" md:w-1/3 flex justify-center">
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000" className=" md:w-1/3 flex justify-center">
 
                             <EnrollCard
                                 title="Android Developer Fundamentals"
@@ -59,7 +68,8 @@ const Courses = () => {
                                 btnColor="bg-green-600"
                             />
                         </div>
-                        <div className="md:w-1/3 flex justify-center">
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000 " className="md:w-1/3 flex justify-center">
                             <EnrollCard
                                 title="Data Science Fundamentals"
                                 body="This track aims to teach you the core
@@ -69,7 +79,8 @@ const Courses = () => {
                                 btnColor="bg-yellow-400"
                             />
                         </div>
-                        <div className="md:w-1/3 flex justify-center">
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000" className="md:w-1/3 flex justify-center">
                             <EnrollCard
                                 title="Programming Fundamentals"
                                 body="This track aims to teach you the core
